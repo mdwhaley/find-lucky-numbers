@@ -1,14 +1,14 @@
 // Write your code below this line.
 //create a function for the problem
 function luckNumbers(n) {
-  // declare a number variable and make sure it is a number
-  n = Number(n);
   //create the array
   let luckNumbersArray = [];
   //create an array to pull numbers from
   let numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  //create an if statement to check n is between 0 and 10
-  if (n >= 0 && n <= 10) {
+  //create an if statement to check n is between 0 and 10, if Bool no
+  if (n === true || n === false) {
+    console.log("Nice try, can't break my code!");
+  } else if (n >= 0 && n <= 10) {
     //loop n times to get a random number
     for (i = 0; i < n; i++) {
       //create a variable of a random number between 0 and numArray length
@@ -20,9 +20,11 @@ function luckNumbers(n) {
     }
     //print the new array
     console.log(luckNumbersArray);
+    return luckNumbersArray;
   } else {
     //tell the user to select a valid value
     console.log("Enter a number between 0 and 10");
+    return luckNumbersArray;
   }
 }
 //test cases
