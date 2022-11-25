@@ -12,7 +12,7 @@ function luckNumbers(n) {
     //loop n times to get a random number
     for (i = 0; i < n; i++) {
       //create a variable of a random number between 0 and numArray length
-      let a = [Math.floor(Math.random() * numArray.length)];
+      let a = Math.floor(Math.random() * numArray.length);
       // use that random number as the index of numArray and push that value to lucky
       luckNumbersArray.push(numArray[a]);
       //splice that number out of numArray so we don't use it again
