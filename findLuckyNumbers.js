@@ -39,3 +39,5 @@ luckNumbers(1);
 luckNumbers(0);
 luckNumbers(12);
 luckNumbers("a");
+luckNumbers(true);
+luckNumbers(false);
